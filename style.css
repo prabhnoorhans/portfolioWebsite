@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Noto Sans", sans-serif;
+	font-optical-sizing: auto;
+	font-style: normal;
+	font-variation-settings: "wdth" 100;
+}
+
+#hero {
+    background-image: url(https://images.pexels.com/photos/219837/pexels-photo-219837.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#hero h1 {
+    font-size: 5em;
+    font-weight: 300;
+    color: #071330;
+}
+
+#hero p {
+    width: 60%;
+    font-size: 2em;
+    color: #0C4160;
+    font-weight: 700;
+    text-align: center;
+}
+
+#hero #links {
+	display: flex;
+	flex-direction: row;
+	gap: 25px;
+	margin-top: 10px;
+}
+
+#hero #links img {
+	height: 50px;
+}
+
+#content {
+    width: 90%;
+    margin: 0 auto;
+	margin-top: 25px;
+}
+
+#content h2 {
+	margin-bottom: 25px;
+	font-size: 3em;
+}
+
+#content #duo {
+	display: flex;
+	justify-content: space-between;
+	gap: 25px;
+}
+
+#content #duo img {
+	max-height: 500px;
+	width: 100%;
+	object-fit: cover;
+	border-radius: 50px;
+	border: 10px solid #0C4160;
+	box-sizing: content-box;
+}
+
+#content #duo p {
+	margin: 0;
+	font-size: 2em;
+	color: white;
+	background-color: #0C4160;
+	padding: 25px;
+	border-radius: 50px;
+}
+
+#content #pictures {
+	margin: 25px 0;
+}
+
+#content #pictures h3 {
+	font-size: 2em;
+	margin-bottom: 10px;
+}
+
+#content #pictures img{
+	width: 32%;
+	border-radius: 100px;
+}
+
+@media screen and (max-width: 1350px) {
+	#content #duo {
+		flex-direction: column;
+	}
+}
+
+@media screen and (max-width: 600px) {
+
+	#hero h1 {
+		font-size: 3.5em;
+	}
+
+	#content #pictures {
+		display: flex;
+		flex-direction: column;
+		gap: 25px;
+	}
+
+	#content #pictures img {
+		width: 100%;
+	}
+}
